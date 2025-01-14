@@ -26,6 +26,8 @@ ENV JUPYTER_CONFIG_DIR=/workspace/jupyter-config
 # This variable is only needed for the `ebmdatalab` package:
 # https://pypi.org/project/ebmdatalab/
 ENV EBMDATALAB_BQ_CREDENTIALS_PATH=/workspace/bq-service-account.json
+# Debug level logs to find error
+ENV JUPYTER_LOG_LEVEL=DEBUG
 
 # Run any necessary post-installation tasks
 COPY postinstall.sh /tmp/postinstall.sh
